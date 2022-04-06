@@ -9,3 +9,6 @@ class Customer:
         self.wallet -= price
         self.drunkeness += strength
         
+    def eat_food(self, price, rejuvenation_level):
+        self.wallet -= price
+        self.drunkeness -= rejuvenation_level
