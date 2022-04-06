@@ -2,7 +2,7 @@ class Pub:
     def __init__(self, name, till, drinks):
         self.name = name
         self.till = till
-        self.drinks = drinks
+        self.drinks = drinks   # or empty list [] - either works
 
     def increase_till(self, price):
         self.till += price
@@ -18,4 +18,10 @@ class Pub:
         if drunkenness > 10:
             return "You have had too many"
         
+    # def count_total_stock(self):
+    #     total = 0
+
+    #     for stock in self.drinks[stock_level]:
+
+               
         
