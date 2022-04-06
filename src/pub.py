@@ -8,8 +8,14 @@ class Pub:
         self.till += price
 
     def can_drink(self, age):
-        
+
         if age >= 18:
             return "Come on in!"
 
         return "Get lost loser"
+
+    def refuse_service(self, drunkenness):
+        if drunkenness > 10:
+            return "You have had too many"
+        
+        

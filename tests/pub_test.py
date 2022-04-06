@@ -36,3 +36,9 @@ class TestPub(unittest.TestCase):
     def test_can_drink__false(self):
         self.assertEqual("Get lost loser",self.pub.can_drink(self.customer_1.age))
 
+    def test_refuse_service__True(self):
+        self.customer_3 = Customer("Lucy", 200.00, 65, 15)
+        self.assertEqual("You have had too many",self.pub.refuse_service(self.customer_3.drunkeness))
+
+    def test_refuse_service__False(self):
+        self.assertEqual(None, self.pub.refuse_service(self.customer_1.drunkeness))
